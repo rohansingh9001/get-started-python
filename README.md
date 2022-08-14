@@ -1,5 +1,5 @@
 # Getting Started with Python on IBM Cloud
-
+# Dummy commit change
 To get started, we'll take you through a sample Python Flask app, help you set up a development environment, deploy to IBM Cloud and add a Cloudant database.
 
 The following instructions are for deploying the application as a Cloud Foundry application. To deploy as a container to **IBM Cloud Kubernetes Service** instead, [see README-kubernetes.md](README-kubernetes.md)
@@ -137,3 +137,12 @@ cf push
   ```
 
   View your app at the URL listed in the output of the push command, for example, *myUrl.mybluemix.net*.
+  
+  
+  ## 7. Dockerize the application
+
+    ```
+       docker build -t iisc-python .
+       docker run -p 8000:8000 iisc-python
+   ```    
+Changed some text!
